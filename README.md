@@ -17,7 +17,7 @@ Output:
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
 
 ## How to contribute
-* Every group writes a function and pulls the requests , do not edit the main branch 
+* Every one finishes the whole project and pulls the requests , do not edit the main branch 
 * if your code is useful, we will add it into the main branch
 
 ## Background Knowledge
