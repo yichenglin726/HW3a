@@ -6,7 +6,7 @@ class pdf2text:
         pass
 
     def __call__(self, pdf_file):
-        tables = camelot.read_pdf(pdf_file)
+        tables = camelot.read_pdf(pdf_file, pages="all")
         texts = []
         for table in tables:
             texts.append(table.df.to_string())
