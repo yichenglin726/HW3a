@@ -2,7 +2,7 @@
 
 ## Installation
 
-```commandline
+```bash
 conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
