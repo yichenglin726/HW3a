@@ -26,10 +26,10 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 The given pdf file:  
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
-Keyword of searching:  
+Search query:  
 
 ```commandline
-非監督式學習的學習目標
+非監督式學習的應用
 ```
 
 Output:
