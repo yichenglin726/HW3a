@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 ## Target
 
-Create an artificial intelligence that searching in which table in the given pdf files has the desired information.  
+Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
 
 #### Input
 
@@ -29,7 +29,7 @@ The given pdf file:
 Keyword of searching:  
 
 ```commandline
-非監督是學習的學習目標
+非監督式學習的學習目標
 ```
 
 Output:
@@ -38,7 +38,7 @@ Output:
 ## How to contribute
 
 * Every one finishes the whole project and pulls the requests , do not edit the main branch
-* if your code is useful, we will add it into the main branch
+* if your code is acceptable, we will add it into the main branch
 
 ## Background Knowledge
 
