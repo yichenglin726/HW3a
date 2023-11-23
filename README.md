@@ -40,6 +40,12 @@ Output:
 * Every one finishes the whole project and pulls the requests , do not edit the main branch
 * if your code is acceptable, we will add it into the main branch
 
+## Note
+
+* In hw3a, you can use any package you think would be helpful.
+* It's also necessary to implement the UI.
+* Also using draw io to draw a flow diagram is required.
+
 ## Background Knowledge
 
 [Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
