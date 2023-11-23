@@ -9,6 +9,16 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## Usage
+1. Use the command line to run the main.py
+    ```bash
+    streamlit run main.py
+    ```
+2. Go to the url that the command line shows
+
+## Flow diagram
+![image](images/flow_diagram.png)
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
@@ -25,7 +35,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,18 +43,12 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](images/example2.png)
 
 ## How to contribute
 
 * Every one finishes the whole project and pulls the requests , do not edit the main branch
 * if your code is acceptable, we will add it into the main branch
-
-## Note
-
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
 
 ## Background Knowledge
 
