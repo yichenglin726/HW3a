@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ```
 
 ## flow diagram
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flowchart.png)
+![image](images/flowchart.png)
 
 
 ## Target
