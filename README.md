@@ -19,6 +19,6 @@ streamlit run main.py
 
 ### Demo
 <!-- 放入圖片demo.jpg -->
-![Demo1](Big_data_system/HW3a/images/demo.jpg)
-![Demo2](Big_data_system/HW3a/images/demo2.jpg)
-![Demo3](Big_data_system/HW3a/images/demo3.jpg)
+![Demo1](/images/demo.jpg)
+![Demo2](/images/demo2.jpg)
+![Demo3](/images/demo3.jpg)
