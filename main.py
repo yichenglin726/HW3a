@@ -15,13 +15,13 @@ class pdf2text:
             f.write(pdf_file.getvalue())
 
         tables = camelot.read_pdf(tmp_path, pages="all")
-        texts = []
+        dfs = []
         for table in tables:
-            texts.append(table.df.to_string())
+            dfs.append(table.df)
 
         Path.unlink(tmp_path)  # remove the tmp file
 
-        return texts
+        return dfs
 
 
 class text2vector:
@@ -47,30 +47,30 @@ def find_table(keyword, pdf_files, pbar):
     keyword_embed = embedder(keyword)
 
     best_sim = 0
-    best_table_text = None
+    best_table_df = None
 
     for i, pdf_file in enumerate(pdf_files):
-        table_texts = pdf_parser(pdf_file)
+        table_dfs = pdf_parser(pdf_file)
 
         curr_progress = (i * 100) // len(pdf_files)
-        progress_step = 100 // len(pdf_files) // len(table_texts)
+        progress_step = 100 // len(pdf_files) // len(table_dfs)
 
         msg = "Seaching for you..." if i == 0 else f"{i}/{len(pdf_files)} files have been seen :eyes:"
         pbar.progress(curr_progress, msg)
 
-        for j, table_text in enumerate(table_texts):
-            table_text_embed = embedder(table_text)
+        for j, table_df in enumerate(table_dfs):
+            table_text_embed = embedder(table_df.to_string())
             sim = get_sim(table_text_embed, keyword_embed)
             if sim > best_sim:
                 best_sim = sim
-                best_table_text = table_text
+                best_table_df = table_df
 
-            msg = f"{j + 1}/{len(table_texts)} table in file {i + 1}"
+            msg = f"{j + 1}/{len(table_dfs)} table in file {i + 1}"
             pbar.progress(curr_progress + (j + 1) * progress_step, msg)
 
     pbar.progress(100, "There you go!")
 
-    return best_table_text
+    return best_table_df
 
 class UI:
     def show(self):
@@ -94,7 +94,7 @@ class UI:
         st.divider()
 
         if "table" in st.session_state:
-            st.text(st.session_state.table)
+            st.table(st.session_state.table)
 
     def on_submit(self, pdfs, query):
         st.session_state["alert"] = None
@@ -105,8 +105,8 @@ class UI:
             st.session_state.alert = "Tell me what content you are interested in."
             return
 
-        table_text = find_table(query, pdfs, self.pbar)
-        st.session_state.table = table_text
+        table_df = find_table(query, pdfs, self.pbar)
+        st.session_state.table = table_df
 
 if __name__ == "__main__":
     ui = UI()
