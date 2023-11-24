@@ -6,8 +6,11 @@
 conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
+
+
 
 ## Target
 
@@ -21,6 +24,18 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Output
 
 **the hole table with desired information in it**
+
+## Inference
+Use following code to inference
+```bash
+streamlit run main.py
+```
+## Flowchart
+![image](images/BDS_hw3a_flowchart.jpg)
+
+## Output Sample
+![image](images/output.png)
+
 
 #### Example
 
