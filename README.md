@@ -4,14 +4,15 @@
 r12922121
 游諠澐
 
-### Installation
+### Environment
 ```
 conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
-
+### Flow
+![flow](/images/flow.png)
 ### Run
 ```
 streamlit run main.py
