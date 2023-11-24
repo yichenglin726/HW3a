@@ -65,7 +65,7 @@ def find_table(keyword, pdf_files, pbar):
                 best_sim = sim
                 best_table_df = table_df
 
-            msg = f"{j + 1}/{len(table_dfs)} table in file {i + 1}"
+            msg = f"{j + 1}/{len(table_dfs)} table in {pdf_file.name}"
             pbar.progress(curr_progress + (j + 1) * progress_step, msg)
 
     pbar.progress(100, "There you go!")
