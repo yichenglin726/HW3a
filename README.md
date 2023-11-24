@@ -9,6 +9,13 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## Usage
+
+```bash
+streamlit run main.py
+```
+and then you can see the website by clicking the Network URL in the terminal.
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
