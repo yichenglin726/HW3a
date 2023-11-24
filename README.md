@@ -9,9 +9,20 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## Usage
+
+1. run main.py
+
+```
+streamlit run main.py
+```
+
+2. Open http://localhost:8501/ to view the application(as below)
+   <img width="373" alt="Application Image" src="https://github.com/Abclab123/HW3a/assets/58909342/37a16753-9a3b-459f-ad7a-518a895eb2f2">
+
 ## Target
 
-Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
+Create an artificial intelligence that searches in which table in the given pdf files has the desired information.
 
 #### Input
 
@@ -26,7 +37,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 The given pdf file:  
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
-Search query:  
+Search query:
 
 ```commandline
 非監督式學習的應用
@@ -37,19 +48,12 @@ Output:
 
 ## How to contribute
 
-* Every one finishes the whole project and pulls the requests , do not edit the main branch
-* if your code is acceptable, we will add it into the main branch
-
-## Note
-
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
+- Every one finishes the whole project and pulls the requests , do not edit the main branch
+- if your code is acceptable, we will add it into the main branch
 
 ## Background Knowledge
 
-[Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
-)
+[Azure Document Intelligence](https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence)
 
 ## Test Document
 
