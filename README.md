@@ -9,20 +9,30 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## Usage
+
+```bash
+streamlit run main.py
+```
+
+## Flow Diagram
+
+![image](images/flow.png)
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
 
-#### Input
+### Input
 
 1. pdf files with only tables inside
 2. the searching keywords
 
-#### Output
+### Output
 
-**the hole table with desired information in it**
+**the whole table with desired information in it**
 
-#### Example
+### Example
 
 The given pdf file:  
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
