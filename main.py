@@ -39,7 +39,7 @@ class cosine_sim:
     def __call__(self, vector_from_table, vector_from_keyword):
         return cos_sim(vector_from_table, vector_from_keyword)
 
-def find_table(keyword, pdf_files):
+def find_table(keyword, pdf_files, pbar):
     pdf_parser = pdf2text()
     embedder = text2vector()
     get_sim = cosine_sim()
@@ -49,14 +49,26 @@ def find_table(keyword, pdf_files):
     best_sim = 0
     best_table_text = None
 
-    for pdf_file in pdf_files:
+    for i, pdf_file in enumerate(pdf_files):
         table_texts = pdf_parser(pdf_file)
-        for table_text in table_texts:
+
+        curr_progress = (i * 100) // len(pdf_files)
+        progress_step = 100 // len(pdf_files) // len(table_texts)
+
+        msg = "Seaching for you..." if i == 0 else f"{i}/{len(pdf_files)} files have been seen :eyes:"
+        pbar.progress(curr_progress, msg)
+
+        for j, table_text in enumerate(table_texts):
             table_text_embed = embedder(table_text)
             sim = get_sim(table_text_embed, keyword_embed)
             if sim > best_sim:
                 best_sim = sim
                 best_table_text = table_text
+
+            msg = f"{j + 1}/{len(table_texts)} table in file {i + 1}"
+            pbar.progress(curr_progress + (j + 1) * progress_step, msg)
+
+    pbar.progress(100, "There you go!")
 
     return best_table_text
 
@@ -77,6 +89,7 @@ class UI:
         if "alert" in st.session_state and st.session_state.alert != None:
             st.warning(st.session_state.alert)
         st.button("Let's Go!", type="primary", on_click=self.on_submit, args=(pdfs, query))
+        self.pbar = st.empty()
 
         st.divider()
 
@@ -92,8 +105,7 @@ class UI:
             st.session_state.alert = "Tell me what content you are interested in."
             return
 
-        with st.spinner("test"):
-            table_text = find_table(query, pdfs)
+        table_text = find_table(query, pdfs, self.pbar)
         st.session_state.table = table_text
 
 if __name__ == "__main__":
