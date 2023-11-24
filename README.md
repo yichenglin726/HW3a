@@ -1,5 +1,9 @@
 # Stage-A Document Intelligence
 
+## Student Info
+Student ID: B09902031
+Name: 童嬿瑜
+
 ## Installation
 
 ```bash
@@ -8,6 +12,20 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+
+## Usage
+1. 
+```bash
+streamlit run main.py
+```
+
+2. Visit http://localhost:8501/ to see the app in action. 
+
+## FlowChart
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flowChart.png)
+
+## UI
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI.png)
 
 ## Target
 
