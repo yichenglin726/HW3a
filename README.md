@@ -1,5 +1,14 @@
 # Stage-A Document Intelligence
 
+## Screenshots
+- the Web UI
+  - ![screenshot-1](images/screenshot-1.png)
+- display progress
+  - ![screenshot-2](images/screenshot-2.png)
+
+## Overview
+![overview of the work](images/overview.png)
+
 ## Installation
 
 ```bash
@@ -7,6 +16,11 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+```
+
+## How to Start?
+```bash
+streamlit run main.py
 ```
 
 ## Target
