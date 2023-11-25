@@ -9,6 +9,14 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## Usage
+
+'''bash
+streamlit run main.py
+'''
+
+UI interface will be hosted on `http://localhost:8501`
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
