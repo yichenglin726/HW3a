@@ -17,6 +17,14 @@ streamlit run main.py
 
 UI interface will be hosted on `http://localhost:8501`
 
+## Flow Chart
+
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/FlowChart.png)
+
+## UI
+
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI.png)
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
