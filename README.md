@@ -19,11 +19,11 @@ UI interface will be hosted on `http://localhost:8501`
 
 ## Flow Chart
 
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/FlowChart.png)
+![image](images/FlowChart.png)
 
 ## UI
 
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI.png)
+![image](images/UI.png)
 
 ## Target
 
