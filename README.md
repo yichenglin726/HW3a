@@ -22,7 +22,7 @@ Run
 streamlit run main.py
 ```
 And use the Network URL(http://localhost:8501) in the terminal to visit website.
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/webpage.png)
+![image](https://github.com/Stage-A/Document-Intelligence/blob/11/images/webpage.png)
 
 ## Target
 
