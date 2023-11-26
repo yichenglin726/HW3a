@@ -1,5 +1,9 @@
 # Stage-A Document Intelligence
 
+## Flow Diagram
+
+![Flow Diagram](images/flow-chart.png)
+
 ## Installation
 
 ```bash
@@ -7,6 +11,12 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+```
+
+## How to execute
+
+```bash
+python3 -m streamlit run ./main.py
 ```
 
 ## Target
