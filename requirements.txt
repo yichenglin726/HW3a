@@ -3,5 +3,3 @@ camelot-py[cv]
 PyPDF2~=2.0
 sentence_transformers
 streamlit
-numpy
-pandas

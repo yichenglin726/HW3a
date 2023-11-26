@@ -3,8 +3,6 @@ import math
 import re
 from sentence_transformers import SentenceTransformer, util
 import streamlit as st
-import numpy as np
-import pandas as pd
 
 class pdf2text:
     def __init__(self):
