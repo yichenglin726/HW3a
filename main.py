@@ -53,7 +53,6 @@ def GUI():
     submit_file = st.file_uploader("Upload PDF File", type=['pdf'], accept_multiple_files=True)
     if submit_file != []:
         chosed_pdf = st.selectbox("Choose PDF File", submit_file)
-        #chosed_pdf = st.selectbox("Choose PDF File", submit_file, format_func=format_func(submit_file))
         if chosed_pdf:
             st.subheader("Chosed File")
             st.write(chosed_pdf.name)
