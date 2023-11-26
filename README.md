@@ -1,5 +1,12 @@
 # Stage-A Document Intelligence
 
+## Student Info
+ID: B09501048
+Name: 方群鈞
+
+## FlowChart
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flow_chart.png)
+
 ## Installation
 
 ```bash
@@ -8,6 +15,14 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+
+## Usage
+Run
+```bash
+streamlit run main.py
+```
+And use the Network URL(http://localhost:8501) in the terminal to visit website.
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/webpage.png)
 
 ## Target
 
