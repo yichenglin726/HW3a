@@ -43,7 +43,7 @@ streamlit run main.py
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Abclab123/HW3a/blob/9/images/images/example1.png)
+![image](https://github.com/Abclab123/HW3a/blob/9/images/example1.png)  
 Search query:  
 
 ```commandline
@@ -51,7 +51,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Abclab123/HW3a/blob/9/images/images/example2.png)
+![image](https://github.com/Abclab123/HW3a/blob/9/images/example2.png)
 
 ## How to contribute
 
