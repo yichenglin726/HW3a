@@ -31,8 +31,6 @@ Use following command to run this project
 ```commandline
 streamlit run main.py
 ```
-## Website
-http://192.168.50.241:8501
 
 ## Flowchart
 
