@@ -5,7 +5,7 @@ ID: B09501048
 Name: 方群鈞
 
 ## FlowChart
-
+![image](https://github.com/Abclab123/HW3a/blob/11/images/flow.png)
 
 ## Installation
 
@@ -22,6 +22,8 @@ Run
 streamlit run main.py
 ```
 And use the Network URL(http://localhost:8501) in the terminal to visit website.
+
+## Demo
 ![image](https://github.com/Abclab123/HW3a/blob/11/images/webpage.png)
 
 ## Target
