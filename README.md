@@ -23,7 +23,7 @@ streamlit run main.py
 3. Press " Search " to get the table
 
 ## Flow Chart
-![flow diagram](https://ibb.co/r61LjJx)
+![flow diagram](https://hackmd.io/_uploads/rytL6jgSa.png)
 
 #### Input
 
