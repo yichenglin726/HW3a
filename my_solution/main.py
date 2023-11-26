@@ -70,14 +70,12 @@ class TableFinder:
             table_text_list = table_text.split()
 
             max_sim, sec_sim = -1, -1
-            sim_list = np.array([])
             for text in table_text_list:
                 text_vector = self.vectorizer.text2vector(text)
                 similarity = self.cosine_sim(keyword_vector, text_vector)
-                sim_list = np.append(sim_list, similarity)
                 max_sim, sec_sim = self.get_max_sec(max_sim, sec_sim, similarity)
 
-            max_sim = (np.exp(max_sim) + np.exp(sec_sim)) / np.average(np.exp(sim_list))
+            max_sim = (np.exp(max_sim) + np.exp(sec_sim)) / (2 * np.e)
             print(f"table({idx}) similarities:", max_sim)
 
             if max_sim >= thresh:
