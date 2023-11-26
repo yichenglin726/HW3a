@@ -15,12 +15,10 @@ pip install -r requirements.txt
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
 
 ## Quick Start
-1. Run
+Run
 ```commandline
 streamlit run main.py
 ```
-2. Type the keyword you want to search
-3. Press " Search " to get the table
 
 ## Flow Chart
 ![flow diagram](https://i.postimg.cc/htTFR9Wk/HW3a-flowchart.png)
