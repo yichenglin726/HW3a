@@ -34,7 +34,9 @@ streamlit run main.py
 
 ## Flowchart
 
+<p align="center">
 ![image](https://github.com/Abclab123/HW3a/blob/9/images/BDS_HW3a_flowchart.drawio.png)
+</p>
 
 ## Demo
 
