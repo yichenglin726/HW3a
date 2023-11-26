@@ -1,8 +1,8 @@
 # Stage-A Document Intelligence
 
 ## Student Info
-ID: R12K41025
-Name: 杜冠廷(K.T. TU)
+Student ID: R12K41025  
+Student Name: 杜冠廷(K.T. TU)
 
 ## Installation
 
