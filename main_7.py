@@ -42,11 +42,45 @@ class cosine_sim:
         cosine = np.dot(vector_from_table,vector_from_keyword)/(norm(vector_from_table)*norm(vector_from_keyword))
         return cosine
 
-def UI():
-    print("it is the UI")
-    pass
+def UI(custom_keyword):
+    st.title('BDS HW3a')
+    st.write("PDF2Text")
+    upload_file = st.file_uploader("Upload YOUR PDF File", type=['pdf'])
+    if upload_file is not None:
+        st.write("Your file")
+        st.write(upload_file.name)
+        pdf_file = os.path.join("docs", upload_file.name)
+        with open(pdf_file, 'wb') as f:
+            f.write(upload_file.read())
     
-
+    st.write("keyword")
+    keyword = st.text_input("keyword", "非監督式學習") 
+    keyword = st.text_input("keyword", "細胞膜") 
+    keyword = st.text_input("keyword", custom_keyword) 
+    
+    if st.button("Processing..."):
+        table = main(keyword, pdf_file)
+        st.write("Output:")
+        st.write(table)
+        
+    # st.title('BDS HW3a')
+    # st.write("PDF2Text")
+    # pdf_file = st.file_uploader("Please select the PDF file you want to transfer", type=['pdf'])
+    # if pdf_file is not None:
+    #     st.write(pdf_file.name)
+    #     pdf_file = os.path.join("docs", pdf_file.name)
+    #     with open(pdf_file, 'wb') as f:
+    #         f.write(pdf_file.read())
+    
+    # st.write("Please type the keyword")
+    # keyword = st.text_input("keyword", "非監督式學習")
+    
+    # if st.button("Processing"):
+    #     table = main(keyword, pdf_file)
+    #     st.write("Output: ")
+    #     st.write(table)
+    #     st.write("Done")
+        
 def main(keyword, pdf_file):
     # parser
     pdf_parser = pdf2text()
@@ -72,4 +106,5 @@ def main(keyword, pdf_file):
 
 
 if __name__ == "__main__":
-    UI()
+    # custom_keyword = input("Please type the keyword: ")
+    UI(custom_keyword)
