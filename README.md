@@ -5,7 +5,7 @@ ID: B09501048
 Name: 方群鈞
 
 ## FlowChart
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flow_chart.png)
+
 
 ## Installation
 
