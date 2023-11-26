@@ -1,4 +1,5 @@
 # Stage-A Document Intelligence
+資工所碩一 陳姵安 R12922029, Branch 7 
 
 ## Installation
 
@@ -12,6 +13,12 @@ pip install -r requirements.txt
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
+
+## Implementation
+Run
+```commandline
+streamlit run main.py
+```
 
 #### Input
 
