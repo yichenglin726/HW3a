@@ -57,7 +57,7 @@ class TableFinder:
             sec_sim = similarity
         return (max_sim, sec_sim)
 
-    def find_most_relevant_tables(self, keyword, pdf_file, top_n=3, thresh=0.65):
+    def find_most_relevant_tables(self, keyword, pdf_file, top_n=2, thresh=-1):
         tables = self.pdf_extractor.extract_tables(pdf_file)
         if not tables:
             return "No tables found or error in reading PDF."
@@ -70,12 +70,14 @@ class TableFinder:
             table_text_list = table_text.split()
 
             max_sim, sec_sim = -1, -1
+            sim_list = np.array([])
             for text in table_text_list:
                 text_vector = self.vectorizer.text2vector(text)
                 similarity = self.cosine_sim(keyword_vector, text_vector)
+                sim_list = np.append(sim_list, similarity)
                 max_sim, sec_sim = self.get_max_sec(max_sim, sec_sim, similarity)
 
-            max_sim = (max_sim + sec_sim) / 2
+            max_sim = (np.exp(max_sim) + np.exp(sec_sim)) / np.average(np.exp(sim_list))
             print(f"table({idx}) similarities:", max_sim)
 
             if max_sim >= thresh:
