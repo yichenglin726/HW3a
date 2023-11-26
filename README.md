@@ -23,7 +23,7 @@ streamlit run main.py
 3. Press " Search " to get the table
 
 ## Flow Chart
-![flow diagram](https://i.postimg.cc/7Lknj4X1/HW3a-flowchart.png)
+![flow diagram](https://i.postimg.cc/htTFR9Wk/HW3a-flowchart.png)
 
 ## Demo
 ![Demo](https://i.postimg.cc/vZcBr2nW/HW3a-demo.png)
