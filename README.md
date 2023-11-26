@@ -2,7 +2,7 @@
 
 ## Student Infomation
 Student ID: R12K41025  
-Student Name: 杜冠廷(K.T. TU)
+Student Name: K.T. TU(杜冠廷)
 
 ## Installation
 
