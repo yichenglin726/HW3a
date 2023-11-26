@@ -1,5 +1,9 @@
 # Stage-A Document Intelligence
 
+## Student Info
+ID: R12K41025
+Name: 杜冠廷(K.T. TU)
+
 ## Installation
 
 ```bash
@@ -22,10 +26,24 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 **the hole table with desired information in it**
 
+## Run
+Use following command to run this project
+```commandline
+streamlit run main.py
+```
+
+## Flowchart
+
+![image](https://github.com/Abclab123/HW3a/blob/9/images/BDS_HW3a_flowchart.drawio.png)
+
+## Demo
+
+![image](https://github.com/Abclab123/HW3a/blob/9/images/output_sample.png)
+
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](https://github.com/Abclab123/HW3a/blob/9/images/images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,7 +51,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](https://github.com/Abclab123/HW3a/blob/9/images/images/example2.png)
 
 ## How to contribute
 
