@@ -40,7 +40,9 @@ streamlit run main.py
 
 ## Demo
 
-![image](https://github.com/Abclab123/HW3a/blob/9/images/output_sample.png)
+<p align="center">
+	 <img src="https://github.com/Abclab123/HW3a/blob/9/images/output_sample.png" />
+</p>
 
 #### Example
 
