@@ -3,7 +3,7 @@ import camelot
 
 class pdf2text:
     def __init__(self):
-        pass
+        pass#
 
     def __call__(self, pdf_file):
         tables = camelot.read_pdf(pdf_file, pages="all")
