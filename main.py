@@ -58,19 +58,19 @@ def search_best_table(keyword, pdf_files):
 
 
 def main():
-    st.set_page_config(page_title="PDF Table Search Engine", layout="wide")
-
-    st.title("Document Intelligence - PDF Table Search Engine")
+    st.set_page_config(page_title="PDF Table Search Engine", page_icon="ℹ️")
+    st.title("PDF Table Search Engine")
 
     pdf_info = {
         "🤖 1.pdf": "監督式學習、非監督式學習、強化學習相關的資料表格",
         "🔬 2.pdf": "動植物細胞特點、多細胞生物和單細胞生物相關的資料表格",
     }
+
     for pdf, intro in pdf_info.items():
         st.write(f"{pdf}: {intro}")
 
     pdf_files = ["docs/1.pdf", "docs/2.pdf"]
-    selected_pdf = st.multiselect("Select PDF files", pdf_files, default=pdf_files)
+    selected_pdf = st.multiselect("Select PDF files", pdf_files)
 
     keyword = st.text_input("Enter a keyword")
 
