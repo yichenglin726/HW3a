@@ -1,5 +1,9 @@
 # Stage-A Document Intelligence
 
+## Diagram
+
+![image](images/Diagram.png)
+
 ## Installation
 
 ```bash
@@ -7,6 +11,12 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+```
+
+## Run
+
+```
+streamlit run main.py
 ```
 
 ## Target
