@@ -13,10 +13,19 @@ pip install -r requirements.txt
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
 
+#### Usage
+```
+streamlit run main.py
+```
+
 #### Input
 
 1. pdf files with only tables inside
 2. the searching keywords
+![image](images/UI.png)
+
+#### Flow Diagram
+![image](images/flow.png)
 
 #### Output
 
