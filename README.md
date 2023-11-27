@@ -1,4 +1,6 @@
 # Stage-A Document Intelligence
+* Name: 高榮浩
+* ID: R12922127
 
 ## Installation
 
@@ -8,6 +10,15 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+
+## Usage
+
+```bash
+streamlit run main.py
+```
+
+## Flow Diagram
+![image](https://github.com/Abclab123/HW3a/blob/43/images/flow_diagram.png)
 
 ## Target
 
@@ -25,7 +36,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](https://github.com/Abclab123/HW3a/blob/43/images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,7 +44,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](https://github.com/Abclab123/HW3a/blob/43/images/example2.png)
 
 ## How to contribute
 
