@@ -77,7 +77,7 @@ class SearchEngine:
         reader = PyPDF2.PdfReader(name)
         page = reader.pages[0]
 
-        print(x1 , y1,x2, y2)
+        
         # Define the area to extract text (this is an estimate)
         # Adjust the offset values as needed (e.g., 100, 50)
         title_area = (x1 , y1,x2, y2 )  # Left, top, right, bottom
