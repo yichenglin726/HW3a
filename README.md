@@ -7,6 +7,13 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+pip install -r requirements-full.txt
+```
+
+## Run
+
+```
+streamlit run main
 ```
 
 ## Target
