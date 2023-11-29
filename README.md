@@ -1,5 +1,10 @@
 # Stage-A Document Intelligence
-
+## Run 
+```
+streamlit run main.py
+```
+## Flow diagram
+![flow diag](/images/hw3a.png)
 ## Installation
 
 ```bash
