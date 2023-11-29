@@ -1,3 +1,6 @@
+## student info
+R12944028 賴冠瑜
+
 # Stage-A Document Intelligence
 
 ## Installation
@@ -7,7 +10,13 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+python -m spacy download zh_core_web_lg
 ```
+#### flowchart
+![image](flowchart.png)
+
+
+
 
 ## Target
 
@@ -21,6 +30,11 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Output
 
 **the hole table with desired information in it**
+
+#### run the app
+```
+streamlit run main.py    
+```
 
 #### Example
 
