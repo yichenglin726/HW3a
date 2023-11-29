@@ -9,47 +9,24 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
-## Target
+## Usage
 
-Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
+To start the Streamlit web app, run the following command in your terminal:
 
-#### Input
-
-1. pdf files with only tables inside
-2. the searching keywords
-
-#### Output
-
-**the hole table with desired information in it**
-
-#### Example
-
-The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
-Search query:  
-
-```commandline
-非監督式學習的應用
+```bash
+streamlit run main.py
 ```
 
-Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+Once the app is running, follow these steps:
+1. **Select PDF Files**: Use the provided interface to select one or more PDF files.
+2. **Enter Keywords**: Input the keywords you want to search for in the PDF documents.
+3. **Search**: Click the 'Search' button to find tables and texts that match your keywords.
 
-## How to contribute
+![Alt text](images/image.png)
 
-* Every one finishes the whole project and pulls the requests , do not edit the main branch
-* if your code is acceptable, we will add it into the main branch
+## Flow chart
 
-## Note
-
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
-
-## Background Knowledge
-
-[Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
-)
+![Alt text](images/drawio.png)
 
 ## Test Document
 
