@@ -43,4 +43,4 @@ Output:
 
 ## Flowchart
 
-![image](./images/output.png)
+![image](./images/flowchart.png)
