@@ -40,3 +40,7 @@ Search query:
 
 Output:
 ![image](./images/result.png)
+
+## Flowchart
+
+![image](./images/output.png)
