@@ -15,7 +15,7 @@ streamlit run main.py
 ```
 
 ## Flow Diagram
-![image](https://github.com/Stage-A/Document-Intelligence/blob/47/images/flow_diagram.drawio.png)
+![image](https://github.com/Abclab123/HW3a/blob/47/images/flow_diagram.drawio.png)
 
 ## Target
 
