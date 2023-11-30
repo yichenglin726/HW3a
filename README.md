@@ -1,4 +1,14 @@
 # Stage-A Document Intelligence
+## Flow chart
+![Image](images/flow_chart.png)
+
+## How to run?
+```commandline
+streamlit run main.py
+```
+
+## Sample execution
+![Image](images/demo_GUI.png)
 
 ## Installation
 
@@ -39,12 +49,6 @@ Output:
 
 * Every one finishes the whole project and pulls the requests , do not edit the main branch
 * if your code is acceptable, we will add it into the main branch
-
-## Note
-
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
 
 ## Background Knowledge
 
