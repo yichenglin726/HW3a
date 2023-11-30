@@ -1,5 +1,7 @@
 # Stage-A Document Intelligence
 
+## 資工所碩一 R12922076 鄭仲語
+
 ## Installation
 
 ```bash
@@ -8,6 +10,16 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+
+## How to run
+
+```bash
+streamlit run main.py
+```
+
+## Flowchart
+
+![Alt text](flowchart.png)
 
 ## Target
 
@@ -25,7 +37,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](./images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,7 +45,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](./images/example2.png)
 
 ## How to contribute
 
@@ -55,3 +67,13 @@ Output:
 
 [Document 1](https://docs.google.com/document/d/1Di5oVYhUF6p-zj2y0DEBBeTvhC91KhX8/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
 [Document 2](https://docs.google.com/document/d/1HiZrgIyvwY8Fi4eLS0QGUkkycngtD6XJ/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
+
+## Demo
+
+![Alt text](./images/demo-1.png)
+
+![Alt text](./images/demo-2.png)
+
+![Alt text](./images/demo-3.png)
+
+![Alt text](./images/demo-4.png)
