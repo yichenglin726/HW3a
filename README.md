@@ -1,5 +1,7 @@
 # Stage-A Document Intelligence
 
+## Workflow
+![Description of image](BDS_hw3.drawio.png)
 ## Installation
 
 ```bash
@@ -9,6 +11,11 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## How to Run
+
+```
+streamlit run main.py
+```
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
