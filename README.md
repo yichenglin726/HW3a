@@ -9,6 +9,12 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+##How to run
+```bash
+streamlit run main.py
+```
+
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
@@ -22,6 +28,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 **the hole table with desired information in it**
 
+
 #### Example
 
 The given pdf file:  
@@ -34,6 +41,14 @@ Search query:
 
 Output:
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+
+
+#### Demo
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/demo.png)
+
+#### Flow Chart
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flow_chart.png)
+
 
 ## How to contribute
 
