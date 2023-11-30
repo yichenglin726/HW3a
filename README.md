@@ -44,10 +44,10 @@ Output:
 
 
 #### Demo
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/demo.png)
+![image](https://github.com/Stage-A/Document-Intelligence/blob/79/images/demo.png)
 
 #### Flow Chart
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flow_chart.png)
+![image](https://github.com/Stage-A/Document-Intelligence/blob/79/images/flow_chart.png)
 
 
 ## How to contribute
