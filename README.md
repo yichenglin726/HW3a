@@ -1,5 +1,7 @@
 # Stage-A Document Intelligence
 
+D12922012
+
 ## Installation
 
 ```bash
@@ -8,6 +10,22 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+## Usage
+with UI
+```commandline
+streamlit run main.py 
+```
+Input the PDF file name (1.pdf or 2.pdf) and keyword
+
+## flowchart
+![Alt text](images/FLOW.png)
+
+## Demo
+with UI
+```commandline
+streamlit run main.py 
+```
+![Alt text](images/image.png)
 
 ## Target
 
