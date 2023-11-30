@@ -22,10 +22,25 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 **the hole table with desired information in it**
 
+#### Inference
+run the following comment to inference
+
+```shell
+streamlit run main.py
+# or 
+python -m streamlit run your_script.py
+```
+#### Flowchart
+![flowchart image](./images/flowchart.png)
+
+#### Output Sample
+![demo image](./images/GUI.png)
+
+
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](./images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,7 +48,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](./images/example2.png)
 
 ## How to contribute
 
