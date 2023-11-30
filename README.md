@@ -14,7 +14,7 @@ streamlit run main.py
 
 ## Flow Chart
 
-![image] (https://github.com/Abclab123/HW3a/blob/100/images/SCR-20231130-szzi.png)
+https://github.com/Abclab123/HW3a/blob/101/images/SCR-20231130-szzi.png
 
 ## Target
 
