@@ -1,5 +1,9 @@
 # Stage-A Document Intelligence
 
+## Flow Diagram
+
+![Flow Diagram](images/HW3a.drawio.png)
+
 ## Installation
 
 ```bash
