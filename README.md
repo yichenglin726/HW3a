@@ -41,7 +41,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](./screenshot.png)
 
 ## Test Document
 
