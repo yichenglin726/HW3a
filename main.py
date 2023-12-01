@@ -12,8 +12,8 @@ class pdf2text:
 
     def __call__(self, pdf_file):
         fp = "temporary_for_hw.pdf"
-        #write the all the values from the original pdf to temporary file
-        
+
+        #write all the values of the original pdf to temporary file
         try:
             f_open = open(fp, "wb")
             f_open.write(pdf_file.getvalue())
@@ -28,6 +28,7 @@ class pdf2text:
                 texts.append(table.df.to_string())
                 tables_df.append(table.df)
 
+        os.remove(fp)
         return texts, tables_df
 
 

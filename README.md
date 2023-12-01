@@ -2,6 +2,8 @@
 
 ## Installation
 
+all the necessary installations have been put into requirements.txt
+
 ```bash
 conda create -n docint python=3.11
 conda activate docint
@@ -21,6 +23,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Output
 
 **the hole table with desired information in it**
+![image](https://github.com/Stage-A/Document-Intelligence/blob/72/images/UI.png)
 
 #### Example
 
