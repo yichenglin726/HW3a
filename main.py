@@ -1,25 +1,12 @@
-import os
-import re
-import sys
-import io
 import camelot
-import math
-import torch
-import time
+import numpy as np
+import pandas as pd
 import streamlit as st
-import numpy as np
-import pandas as pd
-import numpy as np
-import pandas as pd
-from PyPDF2 import PdfReader
-from camelot.handlers import PDFHandler
-from text2vec import SentenceModel
-from sentence_transformers import SentenceTransformer
-import numpy as np
-from pathlib import Path
-from sklearn.metrics.pairwise import cosine_similarity
-from sentence_transformers import SentenceTransformer
+import torch
 import torch.nn.functional as F
+from pathlib import Path
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 
 def pdf2text(pdf_file): # relative path to the file
     # get table title

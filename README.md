@@ -1,5 +1,12 @@
 # Stage-A Document Intelligence
 
+## Background
+This is the hw3 of BDS 2023
+- Student ID: R11625015
+
+### Architecture
+![The architecture](./Architecture.jpg "The architecture flow")
+
 ## Installation
 
 ```bash
