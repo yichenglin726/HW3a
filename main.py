@@ -2,6 +2,7 @@ import camelot
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
 from numpy.linalg import norm
+import pandas as pd
 import streamlit as st
 import os
 
@@ -12,14 +13,45 @@ class pdf2text:
 
     def __call__(self, pdf_file):
         tables = camelot.read_pdf(pdf_file, pages="all")
+
+        temp_table = None
+        current_table = None
+
         texts = []
         table_df = []
+
         for table in tables:
-            table_df.append(table.df)
-            text = table.df.to_string()
+            if table.df.index[-1] <= 2: # adjacent
+                temp_table = table.df
+
+            else:
+                if temp_table is not None:
+                    current_table = pd.concat([temp_table, table.df], ignore_index=True)
+                    temp_table = None
+                else:
+                    current_table = table.df
+
+            table_df.append(current_table)
+            text = current_table.to_string()
             text = text.replace("\\n", "")
             texts.append(text)
-        return texts, table_df
+
+        titles = self.get_titles(pdf_file)
+        return texts, table_df, titles
+
+    def get_titles(self, pdf_file):
+            tables = camelot.read_pdf(pdf_file, flavor='stream', pages="all")
+    
+            titles = []
+            for table in tables:
+                text = table.df.to_string().replace("\\n", "").strip().split(' ')
+                for word in text:
+                    if "ai_tables" in word:
+                        title = word + " " + text[text.index(word) + 1]
+                        titles.append(title)
+            return np.sort(list(set(titles)))
+
+
 
 
 class text2vector:
@@ -60,12 +92,14 @@ def GUI():
             with open(pdf_file, 'wb') as f:
                 f.write(chosed_pdf.read())
             st.subheader("Please Enter Keywords")
-            keyword = st.text_input("keyword", "Enter Keywords")
+            keyword = st.text_input("keyword", "Enter Keywords Here")
     
             if st.button("Search"):
-                table = main(keyword, pdf_file)
-                st.write("Result")
-                st.write(table)
+                with st.spinner('Searching...'):
+                    table, title = main(keyword, pdf_file)
+                    st.write("Result")
+                    st.write(title)
+                    st.dataframe(table)
 
 
 def main(keyword, pdf_file):
@@ -73,7 +107,7 @@ def main(keyword, pdf_file):
     text2vector_parser = text2vector()
     cosine_sim_parser = cosine_sim()
 
-    table_text, table_df = pdf_parser(pdf_file)
+    table_text, table_df, titles = pdf_parser(pdf_file)
     #print(table_text)
 
     text_vector = text2vector_parser(table_text)
@@ -87,8 +121,9 @@ def main(keyword, pdf_file):
     max_cos_sim = max(cos_sim)
     max_index = cos_sim.index(max_cos_sim)
     table = table_df[max_index]
+    title = titles[max_index]
 
-    return table
+    return table, title
 
 
 if __name__ == "__main__":
