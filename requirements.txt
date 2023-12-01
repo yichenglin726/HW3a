@@ -1,4 +1,7 @@
 # python3.11
 camelot-py[cv]
 PyPDF2~=2.0
-adsfadsf
+jieba==0.42.1
+scikit-learn==1.2.2
+numpy==1.24.2
+
