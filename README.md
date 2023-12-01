@@ -15,13 +15,13 @@ pip install -r requirements.txt
 streamlit run main.py
 
 #### UI
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_1.png)
+![image](images/UI_1.png)
 
 ## Input and Output
 #### Input
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_2.png)
+![image](images/UI_2.png)
 #### Output
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_3.png)
+![image](images/UI_3.png)
 
 ## Target
 
