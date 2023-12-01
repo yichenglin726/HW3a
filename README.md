@@ -25,7 +25,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/26/images/example1.png)
+![image](https://github.com/Abclab123/HW3a/blob/26/images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,10 +33,10 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/26/images/example2.png)
+![image](https://github.com/Abclab123/HW3a/blob/26/images/example2.png)
 
 ## Flowchart
-![image](https://github.com/Stage-A/Document-Intelligence/blob/26/images/flowchart.png)
+![image](https://github.com/Abclab123/HW3a/blob/26/images/flowchart.png)
 
 ## UI DEMO
 created by streamlit
@@ -46,7 +46,7 @@ run below code to see demo
 streamlit rum main.py
 ```
 
-![image](https://github.com/Stage-A/Document-Intelligence/blob/26/images/UI.png)
+![image](https://github.com/Abclab123/HW3a/blob/26/images/UI.png)
 
 ## How to contribute
 
