@@ -18,7 +18,7 @@ streamlit run main.py
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
 
-## Flow
+#### Flow
 ![image](BDS_hw3a.png)
 
 #### Input
