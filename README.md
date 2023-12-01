@@ -37,7 +37,7 @@ Output:
 
 ## Web UI
 
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/Web_UI.png)
+![image](images/Web_UI.png)
 
 ## How to start
 
