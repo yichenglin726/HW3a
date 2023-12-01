@@ -9,6 +9,17 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## Running the program
+```bash
+streamlit run main.py 
+```
+
+## Sample output
+![image](images/output.png)
+
+## Flowchart 
+![image](images/flow.png)
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
@@ -20,7 +31,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 #### Output
 
-**the hole table with desired information in it**
+**the whole table with desired information in it**
 
 #### Example
 
