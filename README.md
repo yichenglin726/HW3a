@@ -9,6 +9,12 @@ conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
 
+## Code usage (Please follow the instrcutions here to execute my code)
+
+```bash
+python3 main.py /path/to/the/pdf/file/you/want/to/input
+```
+
 ## Target
 
 Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
