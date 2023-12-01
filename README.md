@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 ## Target
 
-Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
+Create an artificial intelligence that searching in which table in the given pdf files has the desired information.  
 
 #### Input
 
@@ -26,10 +26,10 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 The given pdf file:  
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
-Search query:  
+Keyword of searching:  
 
 ```commandline
-非監督式學習的應用
+非監督是學習的學習目標
 ```
 
 Output:
@@ -38,16 +38,21 @@ Output:
 ## How to contribute
 
 * Every one finishes the whole project and pulls the requests , do not edit the main branch
-* if your code is acceptable, we will add it into the main branch
+* if your code is useful, we will add it into the main branch
 
-## Note
+## Flow Chart
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flow_chart.PNG)
 
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
+## Usage
+
+```bash
+python main.py
+```
+## UI - CLI
+Input
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_CLI.PNG)
 
 ## Background Knowledge
-
 [Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
 )
 
