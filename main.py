@@ -148,7 +148,6 @@ class App:
             st.session_state.missing_keyword is None:
 
             with st.spinner("Searching for the table... :face_with_monocle:"):    
-                # table_df = search_table(keyword, files)
                 matching_info = search_table(keyword, files)
                 st.session_state.table = matching_info['table'] 
                 st.session_state.title = matching_info['title'] 
