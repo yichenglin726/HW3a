@@ -1,57 +1,46 @@
 # Stage-A Document Intelligence
 
-## Installation
+# PDF搜尋工具
+
+這是一個使用 Python 和 Tkinter 建立的桌面應用程式，可讓用戶上傳 PDF 文件，搜索包含特定關鍵字的表格，並將結果顯示在用戶介面中。
+
+## 功能
+
+- **上傳 PDF**: 允許用戶上傳包含表格的 PDF 文件。
+- **關鍵字搜尋**: 用戶可以輸入一個關鍵字，應用程式會搜尋 PDF 文件中最相關的表格。
+- **結果展示**: 將最匹配的表格以表格形式顯示在應用程式中。
+- **儲存結果**: 允許用戶將搜尋到的表格保存為 CSV 文件。
+
+## 使用方法
+
+1. 啟動程式後，點擊 "上傳PDF文件" 按鈕選擇你的 PDF 文件。
+2. 在 "輸入關鍵字" 欄位中，輸入你想要搜尋的關鍵字。
+3. 點擊 "搜尋" 按鈕開始搜尋過程。
+4. 搜尋結果將在下方的表格視窗中展示。
+5. 若需要，你可以通過點擊 "儲存結果" 按鈕來保存搜尋結果。
+
+![img](images/UI.png "UI")
+
+
+## 安裝需求
+
+確保你的系統中已安裝以下 Python 庫：
+
+- tkinter
+- pandas
+- camelot-py
+- scikit-learn
+
+你可以使用 `pip` 來安裝所需的庫：
 
 ```bash
-conda create -n docint python=3.11
-conda activate docint
-conda install -c conda-forge ghostscript
-pip install -r requirements.txt
+pip install tkinter pandas camelot-py scikit-learn
 ```
 
-## Target
+## 啟動程式
 
-Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
+在終端中運行以下命令來啟動應用程式：
 
-#### Input
-
-1. pdf files with only tables inside
-2. the searching keywords
-
-#### Output
-
-**the hole table with desired information in it**
-
-#### Example
-
-The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
-Search query:  
-
-```commandline
-非監督式學習的應用
+```bash
+python main.py
 ```
-
-Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
-
-## How to contribute
-
-* Every one finishes the whole project and pulls the requests , do not edit the main branch
-* if your code is acceptable, we will add it into the main branch
-
-## Note
-
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
-
-## Background Knowledge
-
-[Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
-)
-
-## Test Document
-
-[Document 1](https://docs.google.com/document/d/1Di5oVYhUF6p-zj2y0DEBBeTvhC91KhX8/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
-[Document 2](https://docs.google.com/document/d/1HiZrgIyvwY8Fi4eLS0QGUkkycngtD6XJ/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
