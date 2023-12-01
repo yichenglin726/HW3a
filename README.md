@@ -1,4 +1,4 @@
-# Stage-A Document Intelligence
+# R12922176 康甜甜 碩一 Stage-A Document Intelligence
 
 ## Installation
 
@@ -8,6 +8,20 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+
+## Usage
+
+#### To test my homework
+streamlit run main.py
+
+#### UI
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_1.png)
+
+## Input and Output
+#### Input
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_2.png)
+#### Output
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_3.png)
 
 ## Target
 
