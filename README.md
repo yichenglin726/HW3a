@@ -11,10 +11,12 @@ pip install -r requirements.txt
 
 ## Usage
 
-#### To test my homework
+### To test my homework
+```bash
 streamlit run main.py
+```
 
-#### UI
+### UI
 ![image](images/UI_1.png)
 
 ## Input and Output
