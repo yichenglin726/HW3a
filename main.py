@@ -30,7 +30,6 @@ class pdf2text:
         for text in texts:
             for word in text:
                 if "ai_tables" in word:
-                    # print('yuhu', word, text.index(word) + 1)
                     title_idx = text.index(word) + 1
                     title = f"{word} {text[title_idx]}".rstrip()
                     titles.append(title)
