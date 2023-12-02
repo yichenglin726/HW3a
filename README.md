@@ -41,7 +41,7 @@ Output:
 * if your code is useful, we will add it into the main branch
 
 ## Flow Chart
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/flow_chart.PNG)
+![image](images/flow_chart.PNG)
 
 ## Usage
 
@@ -50,7 +50,7 @@ python main.py
 ```
 ## UI - CLI
 Input
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/UI_CLI.PNG)
+![image](images/UI_CLI.PNG)
 
 ## Background Knowledge
 [Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
