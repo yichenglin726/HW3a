@@ -1,5 +1,5 @@
 # Stage-A Document Intelligence
-
+R11946025 郭訓佑
 ## Installation
 
 ```bash
@@ -8,6 +8,28 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+## Usage
+
+1. First, activate the conda environment:
+
+```bash
+conda activate docint
+```
+
+2. Run test
+
+```bash
+python main.py
+```
+
+3. Run the web app
+
+```bash
+streamlit run .\app.py
+```
+
+## Flow Diagram
+![image](images/flow.png)
 
 ## Target
 
@@ -25,7 +47,7 @@ Create an artificial intelligence that searches in which table in the given pdf 
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,7 +55,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](images/example2.png)
 
 ## How to contribute
 
