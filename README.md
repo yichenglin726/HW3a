@@ -11,45 +11,59 @@ pip install -r requirements.txt
 
 ## Target
 
-Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
+Create an artificial intelligence that searching in which table in the given pdf files has the desired information.  
+
+## Usage
+
+1. Exec main.py
+
+```
+streamlit run main.py
+```
+
+2. A local web page will be displayed
 
 #### Input
 
-1. pdf files with only tables inside
-2. the searching keywords
+1. A fill-in-the-blank box called input a keyword appears below, please enter the searching keywords
 
 #### Output
 
-**the hole table with desired information in it**
+A most suitable table with desired information in it
 
-#### Example
+#### Example 1
 
 The given pdf file:  
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
-Search query:  
+Search query:
 
-```commandline
+```input following keyword
 非監督式學習的應用
 ```
 
-Output:
+The Output is as followed:
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+
+#### Example 2
+The given pdf file:  
+[Document 2](https://docs.google.com/document/d/1HiZrgIyvwY8Fi4eLS0QGUkkycngtD6XJ/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
+Search query:
+
+```input following keyword
+多細胞生物細胞膜
+```
+
+The Output is as followed:
+![image](https://github.com/Stage-A/Document-Intelligence/blob/51/images/example2out.png)
 
 ## How to contribute
 
-* Every one finishes the whole project and pulls the requests , do not edit the main branch
-* if your code is acceptable, we will add it into the main branch
-
-## Note
-
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
+- Every one finishes the whole project and pulls the requests , do not edit the main branch
+- if your code is acceptable, we will add it into the main branch
 
 ## Background Knowledge
 
-[Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
-)
+[Azure Document Intelligence](https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence)
 
 ## Test Document
 
