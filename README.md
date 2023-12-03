@@ -54,7 +54,7 @@ Search query:
 ```
 
 The Output is as followed:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/51/images/example2out.png)
+![image](https://github.com/Abclab123/HW3a/blob/51/images/example2out.png)
 
 ## How to contribute
 
