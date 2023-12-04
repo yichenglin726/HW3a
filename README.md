@@ -5,9 +5,17 @@
 ```bash
 conda create -n docint python=3.11
 conda activate docint
-conda install -c conda-forge ghostscript
+conda install -c conda-forge ghostscript pytorch
 pip install -r requirements.txt
 ```
+## Start
+
+```bash
+streamlit run ./main.py
+```
+
+## Flow Chart
+![image](./images/drawio.png)
 
 ## Target
 
