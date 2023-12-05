@@ -1,4 +1,6 @@
-# Stage-A Document Intelligence
+# Hw3a - Document Intelligence
+## Author
+R09922106 李柚昇 
 
 ## Installation
 
@@ -8,6 +10,17 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+
+## Usage
+```bash
+streamlit run main.py
+```
+
+## Sample Screenshot
+![Sample Screenshot](images/image.png)
+
+## Flow Diagram
+![Flow Diagram](images/diagram.png)
 
 ## Target
 
@@ -20,12 +33,12 @@ Create an artificial intelligence that searches in which table in the given pdf 
 
 #### Output
 
-**the hole table with desired information in it**
+**the whole table with desired information in it**
 
 #### Example
 
 The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](images/example1.png)
 Search query:  
 
 ```commandline
@@ -33,7 +46,7 @@ Search query:
 ```
 
 Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+![image](images/example2.png)
 
 ## How to contribute
 
@@ -48,10 +61,10 @@ Output:
 
 ## Background Knowledge
 
-[Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
+[Azure Document Intelligence](https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
 )
 
 ## Test Document
 
-[Document 1](https://docs.google.com/document/d/1Di5oVYhUF6p-zj2y0DEBBeTvhC91KhX8/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
-[Document 2](https://docs.google.com/document/d/1HiZrgIyvwY8Fi4eLS0QGUkkycngtD6XJ/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
+[Document 1](docs/1.pdf)
+[Document 2](docs/2.pdf)
