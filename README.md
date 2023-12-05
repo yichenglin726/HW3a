@@ -1,5 +1,6 @@
 # Stage-A Document Intelligence
-
+## Student ID
+#### R11944039
 ## Installation
 
 ```bash
@@ -8,6 +9,24 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+## Demo
+### Enviroment
+```bash
+pip install python-Levenshtein streamlit pandas
+```
+### Run this program
+```bash
+streamlit run main.py 
+```
+#### Enter the path of the PDF and search word.
+![Alt Text](./images/demo1.png)
+#### Output the result
+![Alt Text](./images/demo2.png)
+#### Another Example
+![Alt Text](./images/demo3.png)
+
+## Flow Diagram
+![Alt Text](./images/flowchart.png)
 
 ## Target
 
