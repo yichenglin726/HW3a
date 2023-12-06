@@ -1,5 +1,9 @@
 # Stage-A Document Intelligence
 
+## Student Info
+Student ID: R10921A27
+Name: 楊明翰
+
 ## Installation
 
 ```bash
@@ -8,6 +12,13 @@ conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
 ```
+## Usage
+1. 
+```bash
+streamlit run main.py
+```
+
+2. Visit http://localhost:8501/ 
 
 ## Target
 
