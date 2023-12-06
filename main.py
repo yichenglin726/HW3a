@@ -1,4 +1,4 @@
-import camelot
+import camelot 
 
 
 class pdf2text:
@@ -12,7 +12,7 @@ class pdf2text:
             texts.append(table.df.to_string())
         text = "\n".join(texts)
         text = text.replace("\\n", "")
-        return text
+        return text#123123
 
 
 class text2vector:
