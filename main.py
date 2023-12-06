@@ -1,4 +1,6 @@
 import camelot
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 class pdf2text:
@@ -17,10 +19,11 @@ class pdf2text:
 
 class text2vector:
     def __init__(self):
-        pass
+        self.vectorizer = CountVectorizer()
 
     def __call__(self, text):
-        pass
+        vector = self.vectorizer.fit_transform([text])
+        return vector
 
 
 class cosine_sim:
@@ -28,16 +31,41 @@ class cosine_sim:
         pass
 
     def __call__(self, vector_from_table, vector_from_keyword):
-        pass
+        return cosine_similarity(vector_from_table, vector_from_keyword)[0][0]
 
 
-def main(keyword, pdf_file):
+def find_table_with_keyword(pdf_file, keyword):
     pdf_parser = pdf2text()
     table_text = pdf_parser(pdf_file)
-    print(table_text)
-    # return table
+
+    vectorizer = text2vector()
+    table_vector = vectorizer(table_text)
+
+    keyword_vector = vectorizer(keyword)
+
+    similarity_calculator = cosine_sim()
+    similarity = similarity_calculator(table_vector, keyword_vector)
+
+    return table_text, similarity
+
+
+def main(keywords, pdf_files):
+    for pdf_file in pdf_files:
+        for keyword in keywords:
+            table_text, similarity = find_table_with_keyword(pdf_file, keyword)
+
+            # Adjust the threshold as needed
+            if similarity > 0.7:
+                print(f"Keyword: {keyword}")
+                print(f"PDF File: {pdf_file}")
+                print("Table:")
+                print(table_text)
+                print("Similarity:", similarity)
+                print("=" * 50)
 
 
 if __name__ == "__main__":
-    main("keyword", "docs/1.pdf")
-    main("keyword", "docs/2.pdf")
+    search_keywords = ["desired_info_1", "desired_info_2"]
+    pdf_files_to_search = ["docs/1.pdf", "docs/2.pdf"]
+
+    main(search_keywords, pdf_files_to_search)
