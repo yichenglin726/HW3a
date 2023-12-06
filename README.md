@@ -1,4 +1,5 @@
 # Stage-A Document Intelligence
+資工所碩二 r11922090 林則仰 branch:85
 
 ## Installation
 
@@ -7,6 +8,11 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+```
+
+## How to run the code
+```
+streamlit run main.py [path of pdf file]
 ```
 
 ## Target
@@ -35,23 +41,8 @@ Search query:
 Output:
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
 
-## How to contribute
+#### Flow Diagram
+![image](./images/flowchart.png)
 
-* Every one finishes the whole project and pulls the requests , do not edit the main branch
-* if your code is acceptable, we will add it into the main branch
-
-## Note
-
-* In hw3a, you can use any package you think would be helpful.
-* It's also necessary to implement the UI.
-* Also using draw io to draw a flow diagram is required.
-
-## Background Knowledge
-
-[Azure Document Intelligence]( https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
-)
-
-## Test Document
-
-[Document 1](https://docs.google.com/document/d/1Di5oVYhUF6p-zj2y0DEBBeTvhC91KhX8/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
-[Document 2](https://docs.google.com/document/d/1HiZrgIyvwY8Fi4eLS0QGUkkycngtD6XJ/edit?usp=sharing&ouid=107784913306655694785&rtpof=true&sd=true)
+#### Demo
+![image](./images/demo.png)
