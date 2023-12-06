@@ -1,3 +1,8 @@
 # python3.11
 camelot-py[cv]
 PyPDF2~=2.0
+sentence_transformers
+text2vec
+streamlit
+pandas
+numpy
