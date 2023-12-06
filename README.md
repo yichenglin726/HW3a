@@ -10,7 +10,7 @@ streamlit run main.py
 ```
 
 ## Result
-<!-- ![image]() -->
+![image](https://github.com/Abclab123/HW3a/blob/128/images/UI.png)
 
 ## Installation
 
