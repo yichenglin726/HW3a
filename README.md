@@ -1,5 +1,17 @@
 # Stage-A Document Intelligence
 
+## R12921068 吳凱濠
+
+## Flowchart
+
+## Execute
+```bash
+streamlit run main.py
+```
+
+## Result
+<!-- ![image]() -->
+
 ## Installation
 
 ```bash
