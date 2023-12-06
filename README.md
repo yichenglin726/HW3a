@@ -1,4 +1,51 @@
 # Stage-A Document Intelligence
+## Submission
+
+#### Info
+```
+學號：r12944047
+姓名：邱彥慈
+```
+
+#### Target
+```
+Create an artificial intelligence that searches in which table in the given pdf files has the desired information. 
+```
+
+#### Run
+```bash
+streamlit run main.py
+```
+
+#### Input
+```
+1. pdf files with only tables inside
+2. the searching keywords
+```
+
+#### Output
+```
+The hole table with desired information in it
+```
+
+#### Example
+
+* The given pdf file:  
+
+    <img src="images/example1.png" width="400">
+
+* Search query:  
+
+    ```commandline
+    非監督式學習的應用
+    ```
+
+* Output:
+
+    <img src="images/screenshot.png" width="400">
+
+## Flow chart
+<img src="images/flowchart.png" width="400">
 
 ## Installation
 
@@ -7,33 +54,8 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 ```
-
-## Target
-
-Create an artificial intelligence that searches in which table in the given pdf files has the desired information.  
-
-#### Input
-
-1. pdf files with only tables inside
-2. the searching keywords
-
-#### Output
-
-**the hole table with desired information in it**
-
-#### Example
-
-The given pdf file:  
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
-Search query:  
-
-```commandline
-非監督式學習的應用
-```
-
-Output:
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
 
 ## How to contribute
 
