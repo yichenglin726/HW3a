@@ -1,5 +1,7 @@
 import camelot 
-
+import os
+import numpy as np
+import streamlit as st
 
 class pdf2text:
     def __init__(self):
@@ -12,7 +14,7 @@ class pdf2text:
             texts.append(table.df.to_string())
         text = "\n".join(texts)
         text = text.replace("\\n", "")
-        return text#123123
+        return text
 
 
 class text2vector:
