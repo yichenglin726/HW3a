@@ -1,13 +1,6 @@
-# Stage-A Document Intelligence
-
-## Installation
-
-```bash
-conda create -n docint python=3.11
-conda activate docint
-conda install -c conda-forge ghostscript
-pip install -r requirements.txt
-```
+# HW3a: Document Intelligence
+##
+R11941090 王立愷
 
 ## Target
 
@@ -34,6 +27,26 @@ Search query:
 
 Output:
 ![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example2.png)
+
+## Installation
+
+```bash
+conda create -n docint python=3.11
+conda activate docint
+conda install -c conda-forge ghostscript
+pip install -r requirements.txt
+```
+
+## Flow Chart
+![Flow Chart](images/flowchart.png)
+
+## How to run
+
+```bash
+streamlit run main.py
+```
+## Demonstration
+![Demonstration](images/demo.png)
 
 ## How to contribute
 
