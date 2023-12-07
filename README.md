@@ -1,5 +1,8 @@
 # Stage-A Document Intelligence
 
+## Flow Diagram
+![image](bds_hw3a.png)
+
 ## How to run
 ``` bash
 streamlit run main.py 
