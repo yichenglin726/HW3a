@@ -1,5 +1,8 @@
 # Stage-A Document Intelligence
-
+## student info
+r12922157 林奕丞
+## flowchart
+![flowchar](./images/flowchart.pdf)
 ## Installation
 
 ```bash
