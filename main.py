@@ -1,6 +1,7 @@
 import camelot 
 import os
 import numpy as np
+from sentence_transformers import SentenceTransformer, util
 import streamlit as st
 
 class pdf2text:
@@ -19,10 +20,10 @@ class pdf2text:
 
 class text2vector:
     def __init__(self):
-        pass
+        self.model = SentenceTransformer('distiluse-base-multilingual-cased-v2')
 
     def __call__(self, text):
-        pass
+        return self.model.encode(text)
 
 
 class cosine_sim:
@@ -30,7 +31,7 @@ class cosine_sim:
         pass
 
     def __call__(self, vector_from_table, vector_from_keyword):
-        pass
+        return util.cos_sim(vector_from_keyword, vector_from_table)
 
 
 def main(keyword, pdf_file):
