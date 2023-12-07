@@ -3,7 +3,7 @@
 ## R12921068 吳凱濠
 
 ## Flowchart
-![image](https://github.com/Abclab123/HW3a/blob/128/images/Flowchart.png)
+![image](https://github.com/Abclab123/HW3a/blob/128/images/flowchart.png)
 
 ## Execute
 ```bash
