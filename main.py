@@ -59,7 +59,7 @@ class cosine_sim:
 
         Args:
         - table_vec: token vector from the input table
-        - key_vec: keyword to be compared
+        - key_vec: key to be compared
         """
         return util.cos_sim(table_vec, key_vec)
 
