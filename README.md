@@ -1,5 +1,10 @@
 # Stage-A Document Intelligence
 
+## How to run
+``` bash
+streamlit run main.py 
+```
+
 ## Installation
 
 ```bash
