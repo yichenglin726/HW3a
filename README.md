@@ -4,6 +4,9 @@
 Student ID: R10921A27
 Name: 楊明翰
 
+## Flow Diagram
+![Flow Diagram](images/flowChart.png)
+
 ## Installation
 
 ```bash
