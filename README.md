@@ -7,7 +7,16 @@ conda create -n docint python=3.11
 conda activate docint
 conda install -c conda-forge ghostscript
 pip install -r requirements.txt
+
+
+
 ```
+## Implement
+streamlit run main.py
+
+
+## Flowchart
+![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
 
 ## Target
 
