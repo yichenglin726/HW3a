@@ -16,7 +16,16 @@ streamlit run main.py
 
 
 ## Flowchart
-![image](https://github.com/Stage-A/Document-Intelligence/blob/main/images/example1.png)
+![image](https://github.com/Abclab123/HW3a/blob/62/images/Flowchart.JPG)
+
+
+## Final Result
+
+監督式學習
+![image](https://github.com/Abclab123/HW3a/blob/62/images/%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92.JPG)
+
+動物細胞
+![image](https://github.com/Abclab123/HW3a/blob/62/images/%E5%8B%95%E7%89%A9%E7%B4%B0%E8%83%9E.JPG)
 
 ## Target
 
