@@ -1,5 +1,4 @@
-﻿
-import camelot
+﻿import camelot
 import re
 import numpy as np
 
