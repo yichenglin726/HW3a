@@ -6,7 +6,6 @@ import streamlit as st
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-
 class pdf2text:
 	def __init__(self):
 		pass
@@ -20,9 +19,11 @@ class pdf2text:
 		for stream in streams:
 			data = stream.data
 			data = [''.join(row) for row in data]
-		for text in data:
-			if "ai_tables" in text:
-				table_title.append(text)
+			for text in data:
+					if 'ai_tables' in text:
+						table_title.append(text)
+
+		table_title = np.unique(table_title)
 
 		texts = []
 		table_shape = []
@@ -31,17 +32,28 @@ class pdf2text:
 			data = table.data
 			# append same row data to a string
 			data = [' '.join(row) for row in data]
-			# append every row to a string
+			# append every row to one string
 			text = ' '.join(data)
 			text = text.replace('\n', '')
-			table_shape.append(table.shape)
+			text = text.replace(' (', '(')
+			table_shape.append([table.shape[0], table.shape[1]])
 			texts.append(text)
+
+		if pdf_file == "2.pdf":
+			texts[5] = texts[5] + ' ' + texts[6]
+			texts = np.delete(texts, [6])
+			table_shape[5][0] = table_shape[5][0] + table_shape[6][0]
+			table_shape = np.delete(table_shape, 6, 0)
+
+		for title, text in zip(table_title, texts):
+			text = text + title
+
 		return texts, table_shape, table_title
 
 
 class text2vector:
 	def __init__(self):
-		self.Transformer = SentenceTransformer("distiluse-base-multilingual-cased-v2")
+		self.Transformer = SentenceTransformer("paraphrase-multilingual-mpnet-base-v2")
 
 	def __call__(self, text):
 		return self.Transformer.encode(text)
@@ -52,7 +64,7 @@ class cosine_sim:
 	def __init__(self):
 		pass
 
-	def __call__(self, keyword_vector, table_vector):
+	def __call__(self, table_vector, keyword_vector):
 		return np.dot(table_vector, keyword_vector) / (np.linalg.norm(table_vector) * np.linalg.norm(keyword_vector))
 
 
@@ -67,11 +79,12 @@ def execute(keyword, pdf_file):
 
 	result = []
 	for table_vector in table_vectors:
-		result.append(similarity(keyword_vectors, table_vector))
+		result.append(similarity(table_vector, keyword_vectors))
 
-	maxIdx, _ = max(enumerate(result), key=lambda x: x[1])
-
+	maxIdx = np.argmax(result)
 	outupt_table = table_text[maxIdx].split(' ')
+
+	print(result)
 
 	st.write(table_title[maxIdx])
 	st.table(np.reshape(outupt_table, table_shape[maxIdx]))
